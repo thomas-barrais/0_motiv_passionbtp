@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
+  background-color: blanchedalmond;
+  min-height: 100vh;
+}
+
+h1 {
+  padding: 1rem 0 2rem 0;
+}
+
+h3 {
+  padding: 1rem 0 2rem 0;
+}
+
+h4 {
+  padding-bottom: 2rem;
+}
+
+h6 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.indent {
+  text-indent: 30px;
+}
+
+.fen h1 {
+  text-align: center;
+}
+
+.fen h2 {
+  display: block;
+  /* float: left; */
+  margin-left: 20px;
+}
+
+.fen h3 {
+  text-align: center;
+}
+
+.fen h4 {
+  text-align: center;
+}
+
+.fen p {
+  text-align: justify;
+  padding: 1rem 4rem;
+}
+
+.fen ul {
+  text-align: center;
+}
+
+.fen ul li {
+  display: inline-block;
+  padding: 0 10rem 0 10rem;
+}
+
+.fen ul li a {
+  text-decoration: none;
+  color: var(--text);
+  border-radius: 5px;
+  padding: 0.2rem 0.2rem;
+  text-align: center;
+}
+
+.fen ul li a:hover {
+  background-color: grey;
+}
+
+.fen ul li p {
+  text-align: center;
+  font-size: small;
+  padding: 2rem 0;
+  /* max-width: 20%; */
+}
+
+/* animation */
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation-name: fade-in-animation;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in2 {
+  opacity: 0;
+  animation-name: fade-in-animation;
+  animation-duration: 0.9s;
+  animation-delay: 2.1s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in3 {
+  opacity: 0;
+  animation-name: fade-in-animation;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes apparitionDepuisLaGauche {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.element-cible {
+  opacity: 0;
+  animation-name: apparitionDepuisLaGauche;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes apparition-titre-milieu {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titre-milieu {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: apparition-titre-milieu;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.competences-content1 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: apparition-titre-milieu;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.3s;
+  animation-fill-mode: both;
+}
+
+.competences-content2 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: apparition-titre-milieu;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
